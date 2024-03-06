@@ -8,7 +8,7 @@
   }
 
   .h1-title {
-    @apply text-h1-title font-bold leading-[100%] text-[#00284E];
+    @apply text-h1-title font-bold leading-[110%] text-[#00284E];
   }
   .sub-heading {
     @apply text-sub-title font-medium  leading-[110%] text-[#1D1D1D];
