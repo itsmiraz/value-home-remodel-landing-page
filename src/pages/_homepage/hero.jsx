@@ -21,7 +21,7 @@ const Hero = () => {
                     </Balancer>
                 </p>
                 <PrimaryButton>GET A FREE QUOTE</PrimaryButton>
-                <div className='flex gap-x-10 mt-6'>
+                <div className='flex flex-wrap gap-x-10 mt-6'>
                     <Image className=' drop-shadow-xl' src={'https://res.cloudinary.com/djnlyzsmv/image/upload/v1709731261/resdium-assets/value%20home%20remodeling%20website%20assests/image_45_lgt6wl.webp'} alt='facebook-review' width={200} height={60} />
                     <Image className='drop-shadow-xl' src={'https://res.cloudinary.com/djnlyzsmv/image/upload/v1709731261/resdium-assets/value%20home%20remodeling%20website%20assests/image_46_yo1e6j.webp'} alt='facebook-review' width={200} height={60} />
                 </div>
@@ -29,7 +29,7 @@ const Hero = () => {
             <div className='relative'>
 
                 <Image src={'https://res.cloudinary.com/djnlyzsmv/image/upload/v1709729623/resdium-assets/value%20home%20remodeling%20website%20assests/hero-img-1_n1dyr6.webp'} width={507} height={428} alt='hero-main-img ' />
-                <Image className='absolute -bottom-[40%] -left-[50%]' src={'https://res.cloudinary.com/djnlyzsmv/image/upload/v1709729603/resdium-assets/value%20home%20remodeling%20website%20assests/hero-img-2_hsrwzp.webp'} width={587} height={338} alt='hero-main-img ' />
+                <Image className='absolute -bottom-[40%] -left-[45%]' src={'https://res.cloudinary.com/djnlyzsmv/image/upload/v1709729603/resdium-assets/value%20home%20remodeling%20website%20assests/hero-img-2_hsrwzp.webp'} width={587} height={338} alt='hero-main-img ' />
             </div>
 
         </div>
