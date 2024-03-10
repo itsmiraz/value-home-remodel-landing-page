@@ -24,7 +24,7 @@ const Hero = () => {
     }, [inView]);
 
     return (
-        <div ref={sectionRef} className='flex justify-between px-4 md:px-20  grid-cols-2 gap-10 py-20'>
+        <div id='home' ref={sectionRef} className='flex justify-between px-4 md:px-20  grid-cols-2 gap-10 pt-32 pb-32'>
             <motion.div
                 initial='initial'
                 animate={animate ? 'animate' : 'initial'}

@@ -19,7 +19,7 @@ const Testimonial = () => {
   ]
 
   return (
-    <div className="py-32 px-4 md:px-20">
+    <div id="testimonial" className="py-32 px-4 md:px-20">
       <h2 className="h2-title">Hear From The People</h2>
       <h2 className="h2-title">That Trust Us The Most!</h2>
       <div className="py-6 mt-10 flex flex-wrap gap-x-10">

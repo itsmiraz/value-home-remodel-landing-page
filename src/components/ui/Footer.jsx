@@ -6,6 +6,7 @@ import Insta from '../../assets/icons/insta'
 import Yt from '../../assets/icons/yt'
 import Location from '../../assets/icons/location'
 import Phone from '../../assets/icons/phone'
+import Link from 'next/link'
 
 const Footer = () => {
     return (
@@ -31,16 +32,16 @@ const Footer = () => {
                     </h3>
                     <ul className='text-sm text-gray-300 space-y-4'>
                         <li>
-                            <p>Home</p>
+                            <Link href='#home'>    <p>Home</p></Link>
                         </li>
                         <li>
-                            <p>About</p>
+                            <Link href='#about'>  <p>About</p></Link>
                         </li>
                         <li>
-                            <p>Services</p>
+                            <Link href='#service'><p>Services</p></Link>
                         </li>
                         <li>
-                            <p>Who We Servce</p>
+                            <Link href='#whoweServe'>  <p>Who We Servce</p></Link>
                         </li>
                     </ul>
                 </div>

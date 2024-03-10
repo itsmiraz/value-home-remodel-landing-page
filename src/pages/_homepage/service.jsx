@@ -37,7 +37,7 @@ const Service = () => {
     ]
 
     return (
-        <div className="px-4 md:px-20 py-40">
+        <div id="service" className="px-4 md:px-20 py-20">
             <h2 className="h2-title">Our Services</h2>
             <p className="py-4 desc">
                 <Balancer>
@@ -67,7 +67,7 @@ export default Service
 
 const ServiceCard = ({ data }) => {
 
-    return <div className="max-w-[366px] h-[344px] drop-shadow-md">
+    return <div className="max-w-[366px] transition-all duration-500  ease-in-out hover:drop-shadow-xl hover:scale-105 cursor-pointer scale-100 h-[344px] drop-shadow-md">
         <div>
             <Image width={366} height={177} src={data.img} alt="" />
         </div>

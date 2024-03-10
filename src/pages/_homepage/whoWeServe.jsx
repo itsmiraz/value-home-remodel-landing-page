@@ -29,7 +29,7 @@ const WhoWeServe = () => {
     ]
 
     return (
-        <div className='px-4 md:px-20 py-32'>
+        <div id='whoweServe' className='px-4 md:px-20 py-32'>
             <h2 className="h2-title">Who We Serve</h2>
             <div className='py-4 grid grid-cols-2 gap-10'>
                 <div className='bg-[#00284E] rounded-md p-10'>

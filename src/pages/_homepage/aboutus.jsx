@@ -2,7 +2,7 @@ import Image from "next/image"
 
 const Aboutus = () => {
     return (
-        <div className="px-4 md:px-20 py-20 grid grid-cols-2 gap-10">
+        <div id="about" className="px-4 md:px-20 py-24 grid grid-cols-2 gap-10">
 
             <div>
                 <h2 className="h2-title">
