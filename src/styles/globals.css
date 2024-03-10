@@ -10,7 +10,14 @@
   .h1-title {
     @apply text-h1-title font-bold leading-[110%] text-[#00284E];
   }
+  .h2-title {
+    @apply text-h2-title font-bold leading-[110%] text-[#00284E];
+  }
   .sub-heading {
     @apply text-sub-title font-medium  leading-[110%] text-[#1D1D1D];
+  }
+
+  .desc {
+    @apply text-desc font-normal  leading-[120%] text-[#1D1D1D];
   }
 }

@@ -15,6 +15,8 @@ module.exports = {
 
       fontSize: {
         "h1-title": ["clamp(2rem, 1.6919rem + 0.9859vw, 2.875rem)"],
+        "h2-title": ["clamp(2rem, 1.8239rem + 0.5634vw, 2.5rem)"],
+        desc: ["clamp(1rem, 0.956rem + 0.1408vw, 1.125rem)"],
         "sub-title": ["clamp(1.125rem, 1.059rem + 0.2113vw, 1.3125rem)"],
       },
       fontWeight: {

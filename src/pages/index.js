@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Hero from "./_homepage/hero";
+import Service from "./_homepage/service";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
         <title>Value Home Remodeling</title>
       </Head>
       <Hero />
+      <Service />
     </main>
   );
 }
