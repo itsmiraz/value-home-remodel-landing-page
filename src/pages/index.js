@@ -14,14 +14,14 @@ export default function Home() {
       <Head>
         <title>Value Home Remodeling</title>
       </Head>
-      <Hero />
-      <Service />
+      {/* <Hero /> */}
+      {/* <Service />
       <WhychooseUs />
       <WhoWeServe />
       <OwnerMessage />
       <Aboutus />
       <CTA />
-      <Testimonial />
+      <Testimonial /> */}
     </main>
   );
 }

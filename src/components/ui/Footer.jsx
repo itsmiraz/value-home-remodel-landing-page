@@ -13,7 +13,7 @@ const Footer = () => {
         <div className='bg-primary px-4 py-6 md:px-20'>
 
             <div className='grid grid-cols-6 gap-10'>
-                <div className='col-span-3 space-y-4'>
+                <div className='col-span-6 md:col-span-3 space-y-4'>
                     <Image src={'https://res.cloudinary.com/djnlyzsmv/image/upload/v1710052988/resdium-assets/value%20home%20remodeling%20website%20assests/logo-white-version_g5ptcl.png'} alt='logo' width={250} height={89.74} />
                     <p className='text-white'>
                         <Balancer>
@@ -26,7 +26,7 @@ const Footer = () => {
                         <Yt />
                     </div>
                 </div>
-                <div className='col-span-1'>
+                <div className=' col-span-3 md:col-span-1'>
                     <h3 className='text-lg mt-10 mb-6 font-medium text-white'>
                         Navigation
                     </h3>
@@ -45,7 +45,7 @@ const Footer = () => {
                         </li>
                     </ul>
                 </div>
-                <div className='col-span-2 '>
+                <div className=' col-span-6 md:col-span-2 '>
                     <h3 className='text-lg mt-10 mb-6 font-medium text-white'>
                         Contact Us
                     </h3>
