@@ -2,6 +2,9 @@ import Head from "next/head";
 import Hero from "./_homepage/hero";
 import Service from "./_homepage/service";
 import WhychooseUs from "./_homepage/whychooseUs";
+import WhoWeServe from "./_homepage/whoWeServe";
+import OwnerMessage from "./_homepage/ownerMessage";
+import Aboutus from "./_homepage/aboutus";
 
 export default function Home() {
   return (
@@ -12,6 +15,9 @@ export default function Home() {
       <Hero />
       <Service />
       <WhychooseUs />
+      <WhoWeServe />
+      <OwnerMessage />
+      <Aboutus />
     </main>
   );
 }
