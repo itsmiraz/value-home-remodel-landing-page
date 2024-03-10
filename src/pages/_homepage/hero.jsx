@@ -30,7 +30,7 @@ const Hero = () => {
                 animate={animate ? 'animate' : 'initial'}
                 exit='exit'
                 variants={slideAnimation('left')}
-                className='space-y-6 w-[100%] md:pt-0 pt-32 md:w-[50%]'>
+                className='space-y-6 w-[100%] md:pt-0 pt-24 md:w-[50%]'>
                 <p className='bg-third text-xs text-white px-4 py-1 rounded w-fit'>
                     Top Rated Local Roofer In Bolingbrook, Illinois.
                 </p>
@@ -43,22 +43,26 @@ const Hero = () => {
                         Hiring a remodeler is tough. We make it easy. Get a free no-hassle storm damage consultation today!
                     </Balancer>
                 </p>
-                <PrimaryButton>GET A FREE QUOTE</PrimaryButton>
-                <div className='flex  gap-x-4 md:gap-x-10 pt-10'>
-                    <motion.div
-                        initial='initial'
-                        animate={animate ? 'animate' : 'initial'}
-                        exit='exit'
-                        variants={slideAnimation('up')}>
-                        <Image className=' drop-shadow-xl' src={'https://res.cloudinary.com/djnlyzsmv/image/upload/v1709731261/resdium-assets/value%20home%20remodeling%20website%20assests/image_45_lgt6wl.webp'} alt='facebook-review' width={200} height={60} />
-                    </motion.div>
-                    <motion.div
-                        initial='initial'
-                        animate={animate ? 'animate' : 'initial'}
-                        exit='exit'
-                        variants={slideAnimation('up')}>
-                        <Image className='drop-shadow-xl' src={'https://res.cloudinary.com/djnlyzsmv/image/upload/v1709731261/resdium-assets/value%20home%20remodeling%20website%20assests/image_46_yo1e6j.webp'} alt='facebook-review' width={200} height={60} />
-                    </motion.div>
+                <div className='flex flex-col-reverse gap-y-8  md:flex-col'>
+                    <div>
+                        <PrimaryButton>GET A FREE QUOTE</PrimaryButton>
+                    </div>
+                    <div className='flex  gap-x-4 md:gap-x-10 md:pt-10'>
+                        <motion.div
+                            initial='initial'
+                            animate={animate ? 'animate' : 'initial'}
+                            exit='exit'
+                            variants={slideAnimation('up')}>
+                            <Image className=' drop-shadow-xl' src={'https://res.cloudinary.com/djnlyzsmv/image/upload/v1709731261/resdium-assets/value%20home%20remodeling%20website%20assests/image_45_lgt6wl.webp'} alt='facebook-review' width={200} height={60} />
+                        </motion.div>
+                        <motion.div
+                            initial='initial'
+                            animate={animate ? 'animate' : 'initial'}
+                            exit='exit'
+                            variants={slideAnimation('up')}>
+                            <Image className='drop-shadow-xl' src={'https://res.cloudinary.com/djnlyzsmv/image/upload/v1709731261/resdium-assets/value%20home%20remodeling%20website%20assests/image_46_yo1e6j.webp'} alt='facebook-review' width={200} height={60} />
+                        </motion.div>
+                    </div>
                 </div>
             </motion.div>
             <div className='relative'>

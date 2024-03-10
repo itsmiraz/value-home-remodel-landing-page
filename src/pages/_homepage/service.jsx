@@ -47,7 +47,7 @@ const Service = () => {
             </p>
             <div>
 
-                <div className="flex flex-wrap mt-20 justify-center grid-cols-3 gap-14">
+                <div className="flex flex-col  md:flex-row mt-20 justify-center grid-cols-3 gap-14">
                     {
                         data.map((item, i) => <ServiceCard key={i} data={item} />)
                     }
@@ -67,9 +67,9 @@ export default Service
 
 const ServiceCard = ({ data }) => {
 
-    return <div className="max-w-[366px] transition-all duration-500  ease-in-out hover:drop-shadow-xl hover:scale-105 cursor-pointer scale-100 h-[344px] drop-shadow-md">
+    return <div className="md:max-w-[366px] max-w-full transition-all duration-500  ease-in-out hover:shadow-xl hover:scale-105 cursor-pointer scale-100 h-[344px] shadow-md">
         <div>
-            <Image width={366} height={177} src={data.img} alt="" />
+            <Image width={366} className="md:w-[366px] w-full" height={177} src={data.img} alt="" />
         </div>
         <div className="p-6 h-fit bg-[#F1F8FF]">
             <h3 className="text-[24px] font-medium text-primary">
