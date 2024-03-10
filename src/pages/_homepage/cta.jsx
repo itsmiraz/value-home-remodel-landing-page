@@ -1,5 +1,5 @@
-import { PrimaryButton } from '@/components/ui/Button'
 import React from 'react'
+import { PrimaryButton } from '../../components/ui/Button'
 
 const CTA = () => {
     return (

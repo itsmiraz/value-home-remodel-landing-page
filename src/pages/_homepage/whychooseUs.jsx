@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
-import { PrimaryButton } from '@/components/ui/Button'
 import Image from 'next/image'
 import React from 'react'
+import { PrimaryButton } from '../../components/ui/Button'
 
 const WhychooseUs = () => {
     return (

@@ -1,11 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
-import { PrimaryButton } from '@/components/ui/Button'
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 import Balancer from 'react-wrap-balancer'
-import { slideAnimation } from '@/lib/motion';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { PrimaryButton } from '../../components/ui/Button';
+import { slideAnimation } from '../../lib/motion';
 
 const Hero = () => {
 
