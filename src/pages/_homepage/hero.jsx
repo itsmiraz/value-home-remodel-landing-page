@@ -24,14 +24,14 @@ const Hero = () => {
     }, [inView]);
 
     return (
-        <div id='home' ref={sectionRef} className='flex justify-between px-4 md:px-20  grid-cols-2 gap-10 pt-32 pb-32'>
+        <div id='home' ref={sectionRef} className='flex overflow-hidden md:flex-row flex-col-reverse justify-between px-4 md:px-20  grid-cols-2 gap-10 pt-10 md:pt-32 pb-32'>
             <motion.div
                 initial='initial'
                 animate={animate ? 'animate' : 'initial'}
                 exit='exit'
                 variants={slideAnimation('left')}
-                className='space-y-6 w-[50%]'>
-                <p className='bg-third text-white px-4 py-1 rounded w-fit'>
+                className='space-y-6 w-[100%] md:pt-0 pt-32 md:w-[50%]'>
+                <p className='bg-third text-xs text-white px-4 py-1 rounded w-fit'>
                     Top Rated Local Roofer In Bolingbrook, Illinois.
                 </p>
                 <h1 className='h1-title'>
@@ -44,7 +44,7 @@ const Hero = () => {
                     </Balancer>
                 </p>
                 <PrimaryButton>GET A FREE QUOTE</PrimaryButton>
-                <div className='flex flex-wrap gap-x-10 pt-10'>
+                <div className='flex  gap-x-4 md:gap-x-10 pt-10'>
                     <motion.div
                         initial='initial'
                         animate={animate ? 'animate' : 'initial'}
@@ -66,16 +66,40 @@ const Hero = () => {
                     initial='initial'
                     animate={animate ? 'animate' : 'initial'}
                     exit='exit'
+                    className='flex justify-end'
                     variants={slideAnimation('right')}>
-                    <Image src={'https://res.cloudinary.com/djnlyzsmv/image/upload/v1709729623/resdium-assets/value%20home%20remodeling%20website%20assests/hero-img-1_n1dyr6.webp'} width={507} height={428} alt='hero-main-img ' />
+                    <Image src={'https://res.cloudinary.com/djnlyzsmv/image/upload/v1709729623/resdium-assets/value%20home%20remodeling%20website%20assests/hero-img-1_n1dyr6.webp'}
+
+                        className='md:block hidden'
+                        width={507} height={428} alt='hero-main-img ' />
+                </motion.div>
+                <motion.div
+                    initial='initial'
+                    animate={animate ? 'animate' : 'initial'}
+                    exit='exit'
+                    className='flex justify-end'
+                    variants={slideAnimation('right')}>
+                    <Image src={'https://res.cloudinary.com/djnlyzsmv/image/upload/v1709729623/resdium-assets/value%20home%20remodeling%20website%20assests/hero-img-1_n1dyr6.webp'}
+
+                        className='block w-[80%] md:hidden'
+                        width={507} height={428} alt='hero-main-img ' />
                 </motion.div>
                 <motion.div
                     initial={{ opacity: 0, y: 500 }}
                     animate={{ opacity: animate ? 1 : 0, y: 150 }}
                     transition={{ duration: 0.4 }}
+                    className='md:block hidden'
                     exit='exit'
                 >
-                    <Image className='absolute w-full bottom-0 -left-[45%]' src={'https://res.cloudinary.com/djnlyzsmv/image/upload/v1709729603/resdium-assets/value%20home%20remodeling%20website%20assests/hero-img-2_hsrwzp.webp'} width={587} height={338} alt='hero-main-img ' />
+                    <Image className='absolute  bottom-0 -left-[45%]' src={'https://res.cloudinary.com/djnlyzsmv/image/upload/v1709729603/resdium-assets/value%20home%20remodeling%20website%20assests/hero-img-2_hsrwzp.webp'} width={587} height={338} alt='hero-main-img ' />
+                </motion.div>
+                <motion.div
+                    initial={{ opacity: 0, y: 500 }}
+                    animate={{ opacity: animate ? 1 : 0, y: 100 }}
+                    transition={{ duration: 0.4 }}
+                    exit='exit'
+                >
+                    <Image className='absolute md:hidden  w-[85%] bottom-0 -left-[1%]' src={'https://res.cloudinary.com/djnlyzsmv/image/upload/v1709729603/resdium-assets/value%20home%20remodeling%20website%20assests/hero-img-2_hsrwzp.webp'} width={587} height={338} alt='hero-main-img ' />
                 </motion.div>
             </div>
 

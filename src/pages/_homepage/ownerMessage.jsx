@@ -4,12 +4,14 @@ import React from 'react'
 const OwnerMessage = () => {
     return (
         <div className='px-4 md:px-20 py-20 place-items-center grid grid-cols-5 gap-6'>
-            <div className='col-span-2'>
+            <div className='col-span-5 md:col-span-2'>
+                <h2 className='h2-title block mb-6  md:hidden'>Your Best Interest at Heart</h2>
+
                 <Image width={449} height={454} src={'https://res.cloudinary.com/djnlyzsmv/image/upload/v1710044560/resdium-assets/value%20home%20remodeling%20website%20assests/founder_svkeem.webp'} alt='' />
             </div>
-            <div className='col-span-3 pr-20'>
-                <h2 className='h2-title'>Your Best Interest at Heart</h2>
-                <p className='text-xl text-primary'>Jack Nabizada</p>
+            <div className='col-span-5 md:col-span-3 md:pr-20'>
+                <h2 className='h2-title md:block hidden'>Your Best Interest at Heart</h2>
+                <p className='text-xl font-semibold text-primary'>Jack Nabizada</p>
                 <p className='text-lg text-primary'>
                     Owner & Founder
                 </p>

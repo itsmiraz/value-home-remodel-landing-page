@@ -47,12 +47,12 @@ const Service = () => {
             </p>
             <div>
 
-                <div className="flex mt-20 justify-center grid-cols-3 gap-8">
+                <div className="flex flex-wrap mt-20 justify-center grid-cols-3 gap-14">
                     {
                         data.map((item, i) => <ServiceCard key={i} data={item} />)
                     }
                 </div>
-                <div className="flex mt-20 justify-center gap-8">
+                <div className="flex flex-wrap mt-10 md:mt-20 justify-center gap-8">
                     {
                         data2.map((item, i) => <ServiceCard key={i} data={item} />)
                     }

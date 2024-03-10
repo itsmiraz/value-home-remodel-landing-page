@@ -2,7 +2,7 @@ import Image from "next/image"
 
 const Aboutus = () => {
     return (
-        <div id="about" className="px-4 md:px-20 py-24 grid grid-cols-2 gap-10">
+        <div id="about" className="px-4 md:px-20 py-24 grid grid-cols-1 md:grid-cols-2 gap-10">
 
             <div>
                 <h2 className="h2-title">
@@ -23,7 +23,7 @@ const Aboutus = () => {
                     </p>
                 </div>
             </div>
-            <div>
+            <div className="md:order-last order-first">
                 <Image src={'https://res.cloudinary.com/djnlyzsmv/image/upload/v1710044560/resdium-assets/value%20home%20remodeling%20website%20assests/about_us_ilg9pr.webp'} alt="" width={547} height={503} />
             </div>
         </div>
