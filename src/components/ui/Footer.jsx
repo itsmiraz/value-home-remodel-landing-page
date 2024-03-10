@@ -67,7 +67,13 @@ const Footer = () => {
                 </div>
 
             </div>
+            <div className='h-[1px] w-full my-4 bg-gray-400'>
 
+            </div>
+
+            <p className='text-white'>
+                Website by <Link href={'https://resdium.live/'} className='underline '>Resdium Digital</Link>
+            </p>
 
         </div>
     )
