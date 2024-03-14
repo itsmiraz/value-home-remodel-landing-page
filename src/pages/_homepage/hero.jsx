@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { PrimaryButton } from '../../components/ui/Button';
 import { slideAnimation } from '../../lib/motion';
+import Link from 'next/link';
 
 const Hero = () => {
 
@@ -24,7 +25,7 @@ const Hero = () => {
     }, [inView]);
 
     return (
-        <div id='home' ref={sectionRef} className='flex overflow-hidden md:flex-row flex-col-reverse justify-between px-4 md:px-20  grid-cols-2 gap-10 pt-20 md:pt-20 pb-32'>
+        <div id='home' ref={sectionRef} className='flex overflow-hidden md:flex-row flex-col-reverse justify-between px-4 md:px-20  grid-cols-2 gap-10 pt-20 md:pt-24 pb-32'>
             <motion.div
                 initial='initial'
                 animate={animate ? 'animate' : 'initial'}
@@ -45,7 +46,11 @@ const Hero = () => {
                 </p>
                 <div className='flex flex-col-reverse gap-y-8  md:flex-col'>
                     <div>
-                        <PrimaryButton>GET A FREE QUOTE</PrimaryButton>
+                        <Link href='#cta'>
+
+
+                            <PrimaryButton>GET A FREE QUOTE</PrimaryButton>
+                        </Link>
                     </div>
                     <div className='flex  gap-x-4 md:gap-x-10 md:pt-10'>
                         <motion.div

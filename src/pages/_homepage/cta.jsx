@@ -3,9 +3,9 @@ import { PrimaryButton } from '../../components/ui/Button'
 
 const CTA = () => {
     return (
-        <div>
+        <div id='cta' className='pb-36 pt-60 px-4'>
 
-            <div className='max-w-[1100px] bg-[#bae0ff] rounded-lg flex md:flex-row flex-col gap-10 md:items-center justify-start items-start  md:justify-between p-10 mx-auto'>
+            <div className='max-w-[1100px]  bg-[#bae0ff] rounded-lg flex md:flex-row flex-col gap-10 md:items-center justify-start items-start  md:justify-between p-10 mx-auto'>
 
                 <div className=''>
                     <h2 className='h2-title text-white'>  Get Free Estimates!</h2>
