@@ -67,11 +67,11 @@ export default Service
 
 const ServiceCard = ({ data }) => {
 
-    return <div className="md:max-w-[366px] max-w-full transition-all duration-500  ease-in-out hover:shadow-xl hover:scale-105 cursor-pointer scale-100 h-[344px] shadow-md">
+    return <div className="md:max-w-[366px] bg-[#F1F8FF] max-w-full transition-all duration-500  ease-in-out hover:shadow-xl hover:scale-105 cursor-pointer scale-100 h-[344px] shadow-md">
         <div>
             <Image width={366} className="md:w-[366px] w-full" height={177} src={data.img} alt="" />
         </div>
-        <div className="p-6 h-fit bg-[#F1F8FF]">
+        <div className="p-6 h-fit ">
             <h3 className="text-[24px] font-medium text-primary">
                 {data.title}
             </h3>

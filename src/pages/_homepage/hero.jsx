@@ -24,7 +24,7 @@ const Hero = () => {
     }, [inView]);
 
     return (
-        <div id='home' ref={sectionRef} className='flex overflow-hidden md:flex-row flex-col-reverse justify-between px-4 md:px-20  grid-cols-2 gap-10 pt-10 md:pt-32 pb-32'>
+        <div id='home' ref={sectionRef} className='flex overflow-hidden md:flex-row flex-col-reverse justify-between px-4 md:px-20  grid-cols-2 gap-10 pt-20 md:pt-20 pb-32'>
             <motion.div
                 initial='initial'
                 animate={animate ? 'animate' : 'initial'}
@@ -53,14 +53,14 @@ const Hero = () => {
                             animate={animate ? 'animate' : 'initial'}
                             exit='exit'
                             variants={slideAnimation('up')}>
-                            <Image className=' drop-shadow-xl' src={'https://res.cloudinary.com/djnlyzsmv/image/upload/v1709731261/resdium-assets/value%20home%20remodeling%20website%20assests/image_45_lgt6wl.webp'} alt='facebook-review' width={200} height={60} />
+                            <Image className='md:w-[200px] w-[150px]  drop-shadow-xl' src={'https://res.cloudinary.com/djnlyzsmv/image/upload/v1709731261/resdium-assets/value%20home%20remodeling%20website%20assests/image_45_lgt6wl.webp'} alt='facebook-review' width={200} height={60} />
                         </motion.div>
                         <motion.div
                             initial='initial'
                             animate={animate ? 'animate' : 'initial'}
                             exit='exit'
                             variants={slideAnimation('up')}>
-                            <Image className='drop-shadow-xl' src={'https://res.cloudinary.com/djnlyzsmv/image/upload/v1709731261/resdium-assets/value%20home%20remodeling%20website%20assests/image_46_yo1e6j.webp'} alt='facebook-review' width={200} height={60} />
+                            <Image className='md:w-[200px] w-[150px] drop-shadow-xl' src={'https://res.cloudinary.com/djnlyzsmv/image/upload/v1709731261/resdium-assets/value%20home%20remodeling%20website%20assests/image_46_yo1e6j.webp'} alt='facebook-review' width={200} height={60} />
                         </motion.div>
                     </div>
                 </div>
